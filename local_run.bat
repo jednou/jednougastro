@@ -1,5 +1,6 @@
 @ECHO OFF
-ECHO Hello World and Testers! I am Fidel Gastro
+ECHO Hello World and Testers!
+ECHO This is Fidel Gastro
 ECHO NultyParametr %0 > aa.txt
 ECHO PrnviParametr %1 >> aa.txt
 for /F "usebackq tokens=1,2 delims==" %%i in (`wmic os get LocalDateTime /VALUE 2^>NUL`) do if '.%%i.'=='.LocalDateTime.' set ldt=%%j
